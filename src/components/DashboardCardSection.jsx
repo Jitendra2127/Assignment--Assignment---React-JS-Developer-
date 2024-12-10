@@ -65,7 +65,7 @@ const Card = ({ image, title, number, percentageNumber, imageColor, percentageNu
     return (
         <>
             <div className='p-2 flex flex-col justify-between hover:bg-gray-500 ' >
-                <span className={`text-2xl w-fit p-2 rounded  bg-${imageColor}-300 text-${imageColor}-500`}>{image}</span>
+                <span className={`text-2xl w-fit p-2 rounded  ${percentageNumberColor === "green" ? "text-green-500 bg-green-300" : "text-red-500 bg-red-300"}`}>{image}</span>
                 
                 <span className='text-white max-lg:text-[12px]'>{title}</span>
                 <div className=' flex justify-between'>
