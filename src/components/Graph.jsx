@@ -7,11 +7,11 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const Graph = () => {
     const data = {
-        labels: ["5", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27",'02'],
+        labels: ["5", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "02", "39", "9", "39", "893", "93"],
         datasets: [
             {
                 label: "Activity",
-                data: [3000, 9000, 6000, 8000, 5000, 7000, 11000, 15000, 10000, 12000, 8000,8000],
+                data: [3000, 9000, 6000, 8000, 5000, 7000, 4000, 1000, 5000, 2000, 8000, 8000, 6000, 4994, 9030, 9393,4000],
                 backgroundColor: "rgba(54, 162, 235, 0.7)",
                 borderRadius: 8, // Rounded bars
             },
@@ -24,7 +24,6 @@ const Graph = () => {
             legend: {
                 display: false, // Hide legend
             },
-
         },
         scales: {
             x: {
@@ -34,21 +33,19 @@ const Graph = () => {
             y: {
                 ticks: {
                     color: "#fff",
-                    callback: (value) => `${value / 1000}k`, // Fixed here
-                    stepSize: 5000,
-                    max: 15000,
+                    callback: (value) => `${value / 1000}k`, // Format y-axis labels
+                    stepSize: 1000,
+                    max: 3000,
                 },
                 grid: { color: "rgba(255, 255, 255, 0.1)" },
             },
         },
     };
 
-
     return (
-        <div className="border border-red-200 *:w-full h-[90%]" >
+        <div className="w-full ">
             <Bar data={data} options={options} />
         </div>
-
     );
 };
 

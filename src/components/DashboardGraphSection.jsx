@@ -8,7 +8,7 @@ import { CgMenuHotdog } from "react-icons/cg";
 const DashboardGraphSection = () => {
     return (
         <>
-            <div className=' *:bg-gray-600 *:rounded flex md:flex-row flex-col gap-4 *:p-4 *:h-56 '>
+            <div className=' *:bg-gray-600 *:rounded flex md:flex-row flex-col gap-4 *:p-4 '>
                 <div className=' md:w-[65%] w-full flex flex-col  '>
                     <div className='justify-between flex   px-4 text-white'>
                         <span className=' text-3xl font-bold'>Active</span>
@@ -18,11 +18,14 @@ const DashboardGraphSection = () => {
                             <option value="">Early</option>
                         </select>
                     </div>
-                    <div className='border  h-full *:border p-2'>
+                    <div className='h-full p-2'>
                         <Graph />
                     </div>
                 </div>
-                <div className=' md:w-[35%] w-full space-y-2 '>
+                <div className=' md:w-[35%] w-full space-y-2  '>
+                    <GoalSection image={<GoGoal />} title="Goals" color="red"/>
+                    <GoalSection image={<CgMenuHotdog />} title="Popular Dishes" color="blue"/>
+                    <GoalSection image={<BiDish />} title="Menus" color="green"/>
                     <GoalSection image={<GoGoal />} title="Goals" color="red"/>
                     <GoalSection image={<CgMenuHotdog />} title="Popular Dishes" color="blue"/>
                     <GoalSection image={<BiDish />} title="Menus" color="green"/>
