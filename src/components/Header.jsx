@@ -5,14 +5,15 @@ import { AiOutlineBell } from "react-icons/ai";
 import { CiUser } from "react-icons/ci";
 import { RiMenuFold3Line } from "react-icons/ri";
 
-const Header = ({handlesidebar}) => {
-    
+const Header = ({ handlesidebar }) => {
+
     return (
         <>
-            <header className='p-2 bg-gray-600 h-full   flex justify-between items-center'>
+            <header className='p-2 bg-gray-600 h-full max-md:gap-2  flex justify-between items-center'>
 
-                <div className="flex gap-2 w-[30%] ">
-                    <span className='flex justify-center text-white text-2xl items-center w-[20%] cursor-pointer    ' onClick={()=>handlesidebar()}><RiMenuFold3Line /></span>
+                <div className="flex gap-2 md:w-[30%] w-full ">
+                    <span className='md:flex hidden justify-center text-white text-2xl items-center w-[20%] cursor-pointer ' ><RiMenuFold3Line /></span>
+                    <span className='md:hidden flex justify-center text-white text-2xl items-center w-[20%] cursor-pointer' onClick={() => handlesidebar()}><RiMenuFold3Line /></span>
                     <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div className="relative w-full">
                         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -24,7 +25,7 @@ const Header = ({handlesidebar}) => {
                     </div>
                 </div>
                 <div>
-                    <ul className='flex gap-2 *:border  *:p-1 *:rounded-full *:bg-gray-100 *:cursor-pointer'  >
+                    <ul className='flex md:gap-2 gap-1 *:border  *:p-1 *:rounded-full *:bg-gray-100 *:cursor-pointer'  >
                         <li><CiMail /></li>
                         <li><CiSettings /></li>
                         <li><AiOutlineBell /></li>

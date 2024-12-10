@@ -6,7 +6,7 @@ import DaskboardTableSection from './DaskboardTableSection'
 
 const Dashboard = () => {
     return (
-        <div className='space-y-4 '>
+        <div className='space-y-4 mt-2 '>
             <p className='text-white font-semibold text-xl'>Dashboard</p>
             <div className=' space-y-4'>
                 <DashboardCardSection/>
