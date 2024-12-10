@@ -45,7 +45,7 @@ const GoalSection = ({image,title,color}) => {
                 </div>
                 <div>
 
-                    <p className=' p-1 bg-gray-600/50 rounded-full'><PiGreaterThanLight /></p>
+                    <p className=' p-1 bg-gray-500 rounded-full'><PiGreaterThanLight /></p>
                 </div>
             </div>
         </>
