@@ -40,7 +40,7 @@ const GoalSection = ({image,title,color}) => {
             <div className='flex justify-between text-white items-center'>
 
                 <div className=' flex  items-center gap-2 '>
-                    <div className={`bg-${color}-500/30   h-fit p-4 text-2xl text-${color}-700  rounded-full`}>{image}</div>
+                    <div className={` ${title==="Goals"?"bg-red-500/30 text-red-700":title==="Menus"?"bg-green-500/30 text-green-800":"bg-blue-500/30 text-blue-700"}   h-fit p-4 text-2xl  rounded-full`}>{image}</div>
                     <div>{title}</div>
                 </div>
                 <div>
