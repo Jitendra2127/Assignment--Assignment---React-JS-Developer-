@@ -94,7 +94,7 @@ const Table = () => {
       };
 
     return (
-        <div className="  h-full">
+        <div className="  ">
 
             <DataTable
                 columns={columns}
